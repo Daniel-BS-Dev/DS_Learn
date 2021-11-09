@@ -1,7 +1,9 @@
 package com.devsuperior.dscatalog.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -14,6 +16,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -40,6 +43,9 @@ public abstract class Lesson implements Serializable{
 			@JoinColumn(name = "offer_id")
 	})
 	private Set<Enrollment> enrollments = new HashSet<>();
+	
+	@OneToMany
+	private List<Deliver> delivers = new ArrayList<>();
 	
 	public Lesson() {
 		
@@ -73,6 +79,10 @@ public abstract class Lesson implements Serializable{
 
 	public void setPosition(Integer position) {
 		this.position = position;
+	}
+	
+	public List<Deliver> getDelivers() {
+		return delivers;
 	}
 
 	@Override

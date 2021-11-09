@@ -45,5 +45,8 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, due_Date, 
 
 INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES (4, 1, 1);
 
+INSERT INTO tb_deliver (corrector_count, feedback, moment, status, uri, user_id, offer_id, lesson_id) VALUES (4, 'Ficou perfeita atendeu as requisições', TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', 1, '', 1,1,4);
+iNSERT INTO tb_lesson_delivers (lesson_id, delivers_id) VALUES (4, 1);
+
             
     

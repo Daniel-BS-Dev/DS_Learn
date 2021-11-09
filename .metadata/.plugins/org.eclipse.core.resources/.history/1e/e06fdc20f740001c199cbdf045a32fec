@@ -20,6 +20,3 @@ INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('5.0
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('1.0',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', TIMESTAMP WITH TIME ZONE'2022-11-09T21:27:45.12345Z',3);
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('4.0',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', TIMESTAMP WITH TIME ZONE'2022-11-09T21:27:45.12345Z',3);
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('5.0',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', TIMESTAMP WITH TIME ZONE'2022-11-09T21:27:45.12345Z',2);
-
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Olá seja bem vindo a mais uma edição',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', false, '' ,1);
-

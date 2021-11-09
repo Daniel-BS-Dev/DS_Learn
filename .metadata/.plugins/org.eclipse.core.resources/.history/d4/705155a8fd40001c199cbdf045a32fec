@@ -27,8 +27,7 @@ INSERT INTO tb_resource (title, description, position, img_uri, type, external_l
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Legal dia','Como esta a atividade eu não conseguir fazer', 2, '' ,2,'',3);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Legal dia','Eessa lição unica é muito dificil', 0, '' ,0,'',2);
 
-INSERT INTO tb_section (title, description, position, img_uri, prerequisite_id, resource_id) VALUES 
-                        ('Capitulo 1','Essa lição unica é muito dificil', 1, ' ' , null ,1);
+
 
                       
     

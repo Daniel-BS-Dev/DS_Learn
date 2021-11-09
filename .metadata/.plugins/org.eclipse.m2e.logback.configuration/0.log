@@ -341,3 +341,101 @@
 2021-11-08 22:10:36,407 [Worker-73: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-11-08 22:10:36,407 [Worker-73: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-11-08 22:10:36,408 [Worker-73: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:13:19,671 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:13:19,671 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:13:19,671 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:13:19,672 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:13:19,679 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:13:19,679 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:13:19,679 [Worker-71: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:16:13,493 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:16:13,494 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:16:13,496 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-11-08 22:16:13,572 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:16:13,586 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:16:13,586 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:16:13,587 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:28:27,075 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:28:27,076 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:28:27,077 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-11-08 22:28:27,300 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:28:27,303 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:28:27,303 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:28:27,303 [Worker-87: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:32:16,531 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:32:16,532 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:32:16,532 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:32:16,533 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:32:16,568 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:32:16,568 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:32:16,568 [Worker-92: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:33:27,050 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:33:27,050 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:33:27,051 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:33:27,051 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:33:27,059 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:33:27,059 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:33:27,059 [Worker-89: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:35:26,510 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:35:26,511 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:35:26,511 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:35:26,511 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:35:26,518 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:35:26,518 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:35:26,519 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:36:21,279 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:36:21,279 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:36:21,279 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:36:21,280 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:36:21,285 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:36:21,285 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:36:21,285 [Worker-93: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:37:53,811 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:37:53,812 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:37:53,812 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:37:53,813 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:37:53,820 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:37:53,820 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:37:53,820 [Worker-96: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:38:36,791 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:38:36,791 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:38:36,792 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:38:36,792 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:38:36,798 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:38:36,798 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:38:36,798 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:38:57,015 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:38:57,015 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:38:57,035 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:38:57,035 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:38:57,041 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:38:57,041 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:38:57,041 [Worker-98: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:40:34,494 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:40:34,495 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:40:34,497 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-11-08 22:40:34,564 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:40:34,568 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:40:34,568 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:40:34,568 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:43:15,010 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:43:15,010 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:43:15,014 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2021-11-08 22:43:15,042 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:43:15,049 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:43:15,049 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:43:15,050 [Worker-94: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:43:53,968 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:43:53,969 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:43:53,969 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:43:53,969 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:43:53,977 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:43:53,977 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:43:53,977 [Worker-103: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources
+2021-11-08 22:46:31,961 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:46:31,961 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:46:31,962 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-11-08 22:46:31,962 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-11-08 22:46:31,968 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-08 22:46:31,968 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-11-08 22:46:31,968 [Worker-86: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workSpace\DsLearn\backend\src\test\resources

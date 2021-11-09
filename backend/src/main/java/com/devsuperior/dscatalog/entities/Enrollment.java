@@ -1,10 +1,14 @@
 package com.devsuperior.dscatalog.entities;
 
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import com.devsuperior.dscatalog.entities.pk.EnrollmentPk;
@@ -23,6 +27,10 @@ public class Enrollment {
 	private Instant refundMoment;
 	private boolean available;
 	private boolean onlyUpdate;
+	
+	@ManyToMany(mappedBy="enrollments")
+	private Set<Lesson> lessons = new HashSet<>();
+	
 	public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available, boolean onlyUpdate) {
 		id.setUser(user);
 		id.setOffer(offer);
@@ -78,6 +86,10 @@ public class Enrollment {
 	
 	public void setOnlyUpdate(boolean onlyUpdate) {
 		this.onlyUpdate = onlyUpdate;
+	}
+
+	public Set<Lesson> getLessons() {
+		return lessons;
 	}
 	
 	

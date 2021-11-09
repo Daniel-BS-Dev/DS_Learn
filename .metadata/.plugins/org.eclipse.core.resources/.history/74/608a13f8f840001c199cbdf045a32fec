@@ -1,5 +1,0 @@
-package com.devsuperior.dscatalog.entities.enums;
-
-public enum ResourceType {
-
-}

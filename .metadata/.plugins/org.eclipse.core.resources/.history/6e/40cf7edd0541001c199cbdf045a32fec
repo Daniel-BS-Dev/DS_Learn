@@ -27,9 +27,8 @@ INSERT INTO tb_resource (title, description, position, img_uri, type, external_l
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Legal dia','Como esta a atividade eu não conseguir fazer', 2, '' ,2,'',3);
 INSERT INTO tb_resource (title, description, position, img_uri, type, external_link, offer_id) VALUES ('Legal dia','Eessa lição unica é muito dificil', 0, '' ,0,'',2);
 
-INSERT INTO tb_section (title, description, position, img_uri, prerequisite_id, resource_id) VALUES ('Capitulo 1','Essa lição unica é muito dificil', 1, ' ' , null ,1);
+INSERT INTO tb_section (title, description, position, img_uri, prerequisite_id, resource_id) VALUES 
+                        ('Capitulo 1','Essa lição unica é muito dificil', 1, ' ' , null ,1);
 
-INSERT INTO tb_enrollment (enroll_Moment, refund_Moment, available, only_update, user_id, offer_id) VALUES 
-(TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', null, true, false, 1, 1);
-            
+                      
     

@@ -11,13 +11,13 @@ import com.devsuperior.dscatalog.dto.UserDTO;
 import com.devsuperior.dscatalog.service.UserService;
 
 @RestController
-@RequestMapping(value="/user")
+@RequestMapping(value="/users")
 public class UserResource {
 	
 	@Autowired
 	private UserService service;
 	
-	@GetMapping
+	@GetMapping(value="/{id}")
 	public ResponseEntity<UserDTO> findById(@PathVariable Long id){
 		UserDTO entity= service.findAll(id);
 		return ResponseEntity.ok().body(entity);

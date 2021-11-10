@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dscatalog.dto.UserDTO;
 import com.devsuperior.dscatalog.entities.User;
@@ -25,6 +26,14 @@ public class UserService implements UserDetailsService {
 	private UserRepository repository;
 	
 	
+	@Transactional(readOnly=true)
+	public UserDTO findAll(Long id) {
+		Optional<User> obj = repository.findById(id);
+		User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Id not found"));
+		return new UserDTO(entity);
+	}
+	
+	
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -39,10 +48,6 @@ public class UserService implements UserDetailsService {
 		return user;
 	}
 
-	public UserDTO findAll(Long id) {
-		Optional<User> obj = repository.findById(id);
-		User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Id not found"));
-		return new UserDTO(entity);
-	}
+	
 
 }

@@ -29,7 +29,7 @@ public class Deliver implements Serializable{
 	private Instant moment;
 	private DeliverStatus status;
 	private String feedback;
-	private Integer correctorCount;
+	private Integer correctCount;
 	
 	@ManyToOne
 	@JoinColumns({
@@ -46,14 +46,14 @@ public class Deliver implements Serializable{
 		
 	}
 
-	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, Integer correctorCount,
+	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, Integer correctCount,
 			Enrollment enrollment, Lesson lesson) {
 		this.id = id;
 		this.uri = uri;
 		this.moment = moment;
 		this.status = status;
 		this.feedback = feedback;
-		this.correctorCount = correctorCount;
+		this.correctCount = correctCount;
 		this.enrollment = enrollment;
 		this.lesson = lesson;
 	}
@@ -99,11 +99,11 @@ public class Deliver implements Serializable{
 	}
 
 	public Integer getCorrectorCount() {
-		return correctorCount;
+		return correctCount;
 	}
 
-	public void setCorrectorCount(Integer correctorCount) {
-		this.correctorCount = correctorCount;
+	public void setCorrectorCount(Integer correctCount) {
+		this.correctCount = correctCount;
 	}
 
 	public Enrollment getEnrollment() {

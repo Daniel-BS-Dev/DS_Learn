@@ -44,7 +44,7 @@ public class Topic implements Serializable {
 	@JoinColumn(name="offer_id")
 	private Offer offer;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name="reply_id")
 	private Reply answer;
 	

@@ -2,15 +2,19 @@ package com.devsuperior.dscatalog.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -30,25 +34,27 @@ public class Reply implements Serializable {
 	@JoinColumn(name="topic_id")
 	private Topic topic;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name="author_id")
 	private User author;
 
-	@ManyToOne
-	@JoinColumn(name="like_id")
-	private User likes;
+	@ManyToMany
+	@JoinTable(name = "tb_reply_likes",
+	joinColumns = @JoinColumn(name = "reply_id"),
+	inverseJoinColumns = @JoinColumn(name="user_id"))
+	private Set<User> likes = new HashSet<>();
 
 	public Reply() {
 		
 	}
 	
-	public Reply(Long id, String body, Instant moment, Topic topic, User author, User likes) {
+	public Reply(Long id, String body, Instant moment, Topic topic, User author) {
 		this.id = id;
 		this.body = body;
 		this.moment = moment;
 		this.topic = topic;
 		this.author = author;
-		this.likes = likes;
+		
 	}
 
 	public Long getId() {
@@ -91,12 +97,8 @@ public class Reply implements Serializable {
 		this.author = author;
 	}
 
-	public User getLikes() {
+	public Set<User> getLikes() {
 		return likes;
-	}
-
-	public void setLikes(User likes) {
-		this.likes = likes;
 	}
 
 	@Override

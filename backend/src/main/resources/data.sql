@@ -49,8 +49,6 @@ INSERT INTO tb_deliver (corrector_count, feedback, moment, status, uri, user_id,
 
 INSERT INTO tb_topic (body, moment, title, reply_id, author_id, lesson_id, offer_id) VALUES ('esse atividade vai te ensinar muito',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z','HTML', null, 1, 4, 1);  
 
-INSERT INTO tb_topic_likes (user_id, topic_id) VALUES (1, 1);      
-
-INSERT INTO tb_reply (body, moment, author_id, like_id, topic_id) 
-VALUES ('Topic muito importante para aprender',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', 1, 1,1);    
-    
+INSERT INTO tb_reply (body, moment, author_id, topic_id) VALUES ('Topic muito importante para aprender',TIMESTAMP WITH TIME ZONE'2021-11-09T21:27:45Z', 1,1);      
+   
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);  

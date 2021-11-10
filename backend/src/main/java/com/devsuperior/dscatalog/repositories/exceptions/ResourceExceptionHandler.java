@@ -73,7 +73,7 @@ public class ResourceExceptionHandler {
 	// token não é valido para acessa o metodo
 	@ExceptionHandler(Unauthorized.class)
 	public ResponseEntity<OAuthCustomError> database(Unauthorized e, HttpServletRequest request){
-		OAuthCustomError err = new  OAuthCustomError("Forbidden", e.getMessage());
+		OAuthCustomError err = new  OAuthCustomError("Anauthrized", e.getMessage());
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(err);
 	}
 

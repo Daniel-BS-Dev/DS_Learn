@@ -30,6 +30,10 @@ public class Notification implements Serializable {
     @ManyToOne
     @JoinColumn(name="user_id")
     private User user;
+    
+    public Notification() {
+    	
+    }
 
 	public Notification(Long id, String text, Instant moment, Boolean read, String route, User user) {
 		this.id = id;

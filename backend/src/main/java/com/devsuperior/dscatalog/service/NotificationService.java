@@ -23,7 +23,7 @@ public class NotificationService {
 	@Transactional(readOnly=true)
 	public Page<NotificationDTO> notificationForCurrentUser(Pageable pageable){
 		User user = authService.authenticated();
-		Page<Notification> page = repository.findByUser(user, pageable);
+		Page<Notification> page = repository.findByUser(user, pageable);// busca as notificaçoes apenas dos usuarios relacionados
 		return page.map(x -> new NotificationDTO(x));
 	}
 }

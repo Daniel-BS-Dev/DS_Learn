@@ -47,6 +47,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Autowired
 	private JwtTokenEnhancer tokenEnhancer;
 	
+	
+	// esse user foi instanciado por conta do token
 	@Autowired
 	private UserDetailsService service;
 
@@ -61,9 +63,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		.withClient(clientId)
 		.secret(passwordEncoder.encode(clientSecret))
 		.scopes("read","write")
-		.authorizedGrantTypes("password", "refresh_token")
+		.authorizedGrantTypes("password", "refresh_token")// added o refresh_token
 		.accessTokenValiditySeconds(jwtDuration)
-		.refreshTokenValiditySeconds(jwtDuration);
+		.refreshTokenValiditySeconds(jwtDuration);// added para o token
 
 	}
 
@@ -76,7 +78,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		.tokenStore(tokenStore)
 		.accessTokenConverter(accessTokenConverter)
 		.tokenEnhancer(chain)
-		.userDetailsService(service);
+		.userDetailsService(service);// added para o token todas as alterações são nesta classe
 	}
 	
 	

@@ -6,6 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+// não coloco equals e hashCode por que como eu estou herdando da classe lesson ele ja faz isso
+
 @Entity
 @Table(name="tb_task")
 public class Task extends Lesson {
@@ -23,7 +25,8 @@ public class Task extends Lesson {
 		
 	}
 
-	public Task(String description, Integer questionCount, Integer approvalCount, Double weight, Instant dueDate) {
+	public Task(String description, Integer questionCount, Integer approvalCount, Double weight, Instant dueDate, Long id, String title, Integer position, Section section) {
+		super(id, title, position,section); // construtor da classe mãe
 		this.description = description;
 		this.questionCount = questionCount;
 		this.approvalCount = approvalCount;

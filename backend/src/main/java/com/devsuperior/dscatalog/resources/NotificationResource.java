@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.reosurces;
+package com.devsuperior.dscatalog.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

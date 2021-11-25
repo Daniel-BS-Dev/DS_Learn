@@ -99,6 +99,7 @@ public class User implements UserDetails, Serializable {
 			return notifications;
 		}
 		
+		// metodo para verificar se o usuario é admin ou não
 		public boolean hasRole(String roleName) {
 			for(Role role: roles) {
 				if(role.getAuthority().equals(roleName)) {

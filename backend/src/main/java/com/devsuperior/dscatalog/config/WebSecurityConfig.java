@@ -14,7 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)// essa anotação era para eu metodo permite autorização por metodo, usei no deliveryResource
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired

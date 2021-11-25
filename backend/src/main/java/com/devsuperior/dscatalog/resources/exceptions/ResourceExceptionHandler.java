@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.repositories.exceptions;
+package com.devsuperior.dscatalog.resources.exceptions;
 
 import java.time.Instant;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.Forbidden;
+import com.devsuperior.dscatalog.services.exceptions.ForbiddenException;
 import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
-import com.devsuperior.dscatalog.services.exceptions.Unauthorized;
+import com.devsuperior.dscatalog.services.exceptions.UnauthorizedException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
@@ -32,7 +32,7 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(status).body(err);
 	}
 	
-	// pagar uma entidade com relacionamento
+	// apagar uma entidade com relacionamento
 	@ExceptionHandler(DatabaseException.class)
 	public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request){
 		HttpStatus status = HttpStatus.BAD_REQUEST;
@@ -47,7 +47,7 @@ public class ResourceExceptionHandler {
 	
 	// validation exception
 	@ExceptionHandler(MethodArgumentNotValidException.class)
-	public ResponseEntity<ValidationError> database(MethodArgumentNotValidException e, HttpServletRequest request){
+	public ResponseEntity<ValidationError> validation(MethodArgumentNotValidException e, HttpServletRequest request){
 		HttpStatus status = HttpStatus.UNPROCESSABLE_ENTITY;
 		ValidationError err = new ValidationError();
 		err.setTimestamp(Instant.now());
@@ -63,16 +63,17 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(status).body(err);
 	}
 
-	// não tem token
-	@ExceptionHandler(Forbidden.class)
-	public ResponseEntity<OAuthCustomError> database(Forbidden e, HttpServletRequest request){
+	//tem token mas o acesso não é permitido para o perfil, se o usuario acessa o id 2 tem que lançar essa exceção
+	// o retorno do erro vem da classe OAuthCustomError, o tipo da exceção vem do meu pacote de serviceException
+	@ExceptionHandler(ForbiddenException.class)
+	public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest request){
 		OAuthCustomError err = new  OAuthCustomError("Forbidden", e.getMessage());
 		return ResponseEntity.status(HttpStatus.FORBIDDEN).body(err);
 	}
 	
-	// token não é valido para acessa o metodo
-	@ExceptionHandler(Unauthorized.class)
-	public ResponseEntity<OAuthCustomError> database(Unauthorized e, HttpServletRequest request){
+	// não tem token
+	@ExceptionHandler(UnauthorizedException.class)
+	public ResponseEntity<OAuthCustomError> unauthozed(UnauthorizedException e, HttpServletRequest request){
 		OAuthCustomError err = new  OAuthCustomError("Anauthrized", e.getMessage());
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(err);
 	}

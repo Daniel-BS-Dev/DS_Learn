@@ -15,6 +15,8 @@ import javax.persistence.Table;
 
 import com.devsuperior.dscatalog.entities.pk.EnrollmentPk;
 
+//a chave primaria da classe e composta por user e offer vem da classe enrollmentPK
+
 @Entity
 @Table(name="tb_enrollment")
 public class Enrollment {
@@ -36,6 +38,10 @@ public class Enrollment {
 	@OneToMany(mappedBy="enrollment")
 	private List<Deliver> delivers = new ArrayList<>(); 
 	
+	public Enrollment() {
+		
+	}
+	
 	public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available, boolean onlyUpdate) {
 		id.setUser(user);
 		id.setOffer(offer);
@@ -46,6 +52,7 @@ public class Enrollment {
 	}
 	
 	public User student() {
+		// id.getUser -> por que o id é do tipo enrollmentPk e é nesta classe que eu tenho o usuario
 		return id.getUser();
 	}
 	

@@ -11,5 +11,6 @@ import com.devsuperior.dscatalog.entities.User;
 
 @Repository
 public interface NotificationRepository extends JpaRepository<Notification, Long> {
+	// findByUser -> faz a busca de usuario como é uma busca paginada eu tenho que passa o pageable tambem
      Page<Notification> findByUser(User user, Pageable pageable);
 }

@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.reosurces;
+package com.devsuperior.dscatalog.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,12 +13,14 @@ import com.devsuperior.dscatalog.dto.DeliverRevisionDTO;
 import com.devsuperior.dscatalog.service.DeliverRevisionService;
 
 @RestController
-@RequestMapping(value = "/delivers")
+@RequestMapping(value = "/deliveries")
 public class DeliverResource {
 
 	@Autowired
 	private DeliverRevisionService service;
 	
+	// essa anotações libera por metodo, ou seja so o admin e o inistructor podem enviar um deliver,
+	//não posso esquecer e colocar a anotação na classe webSecurityConfigura para poder usar
 	@PreAuthorize("hasAnyRole('ADMIN','INSTRUCTOR')")
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<Void> saveRevision(@PathVariable Long id, @RequestBody DeliverRevisionDTO dto){

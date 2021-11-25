@@ -32,7 +32,7 @@ public class UserService implements UserDetailsService {
 	
 	@Transactional(readOnly=true)
 	public UserDTO findAll(Long id) {
-		authService.ValidateSelfOrAdmin(id);
+		authService.ValidateSelfOrAdmin(id);// metodo criado na classe authService
 		Optional<User> obj = repository.findById(id);
 		User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Id not found"));
 		return new UserDTO(entity);

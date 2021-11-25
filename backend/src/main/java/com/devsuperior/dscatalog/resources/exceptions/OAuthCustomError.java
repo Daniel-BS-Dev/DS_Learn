@@ -1,8 +1,13 @@
-package com.devsuperior.dscatalog.repositories.exceptions;
+package com.devsuperior.dscatalog.resources.exceptions;
 
 import java.io.Serializable;
 
+//esta classe foi criada para mostrar o erro customizado quando o user não tem o token, no pacote de services eu vou criar outra exceção
+// para lançar como erro
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+//essa classe foi criada para retornar um erro caso o usuario não tenha token ou seu acesso não seja permitido, classe resourceExceptionHandler
 
 public class OAuthCustomError implements Serializable {
 	private static final long serialVersionUID = 1L;

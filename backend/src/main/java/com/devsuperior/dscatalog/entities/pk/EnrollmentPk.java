@@ -9,6 +9,8 @@ import javax.persistence.ManyToOne;
 import com.devsuperior.dscatalog.entities.Offer;
 import com.devsuperior.dscatalog.entities.User;
 
+//essa classe fui criada para definir a chave primaria da minha classe enrollment
+
 @Embeddable // essa anotação e usada quando a chave é composta
 public class EnrollmentPk implements Serializable {
 	private static final long serialVersionUID = 1L;

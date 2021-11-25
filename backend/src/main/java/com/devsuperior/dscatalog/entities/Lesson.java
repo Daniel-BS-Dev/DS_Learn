@@ -21,7 +21,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="tb_lesson")
-@Inheritance(strategy = InheritanceType.JOINED) // notação usada para herança. Joined faz uma table pra cada table mãe e filho
+// como essa é uma super class e tem herança essa anotação @Inheritance é necessaria
+// joined -> vai criar uma class pra cada entity
+// single -> apenas uma table para todas as entity
+// Table_Per_Class -> cria uma classe pra cada entity concreta ou seja não abstract
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Lesson implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -35,6 +39,8 @@ public abstract class Lesson implements Serializable{
 	@JoinColumn(name = "section_id")
 	private Section section;
 	
+	
+	//como a chave primaria do meu enrollment é composta eu tenho que declara o user é a offer como chave no relacionamento relacional
 	@ManyToMany
 	@JoinTable(name = "tb_lessons_done",
 	joinColumns = @JoinColumn(name = "lesson_id"),
@@ -54,7 +60,7 @@ public abstract class Lesson implements Serializable{
 		
 	}
 
-	public Lesson(Long id, String title, Integer position) {
+	public Lesson(Long id, String title, Integer position, Section section) {
 		this.id = id;
 		this.title = title;
 		this.position = position;
@@ -84,6 +90,18 @@ public abstract class Lesson implements Serializable{
 		this.position = position;
 	}
 	
+	public Section getSection() {
+		return section;
+	}
+
+	public void setSection(Section section) {
+		this.section = section;
+	}
+
+	public Set<Enrollment> getEnrollments() {
+		return enrollments;
+	}
+
 	public List<Deliver> getDelivers() {
 		return delivers;
 	}

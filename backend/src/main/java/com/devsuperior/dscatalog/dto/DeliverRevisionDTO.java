@@ -8,7 +8,6 @@ import com.devsuperior.dscatalog.entities.enums.DeliverStatus;
 public class DeliverRevisionDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private Instant moment;
 	private DeliverStatus status;
 	private String feedback;
 	private Integer correctCount;
@@ -17,21 +16,12 @@ public class DeliverRevisionDTO implements Serializable{
 		
 	}
 
-	public DeliverRevisionDTO(Instant moment, DeliverStatus status, String feedback, Integer correctCount) {
-		this.moment = moment;
+	public DeliverRevisionDTO(DeliverStatus status, String feedback, Integer correctCount) {
 		this.status = status;
 		this.feedback = feedback;
 		this.correctCount = correctCount;
 	}
-
-	public Instant getMoment() {
-		return moment;
-	}
-
-	public void setMoment(Instant moment) {
-		this.moment = moment;
-	}
-
+	
 	public DeliverStatus getStatus() {
 		return status;
 	}

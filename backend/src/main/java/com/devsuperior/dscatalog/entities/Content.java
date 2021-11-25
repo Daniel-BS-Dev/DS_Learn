@@ -3,6 +3,9 @@ package com.devsuperior.dscatalog.entities;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+
+//não coloco equals e hashCode por que como eu estou herdando da classe lesson ele ja faz isso
+
 @Entity
 @Table(name= "tb_content")
 public class Content extends Lesson {
@@ -15,7 +18,8 @@ public class Content extends Lesson {
 		
 	}
 	
-	public Content(String textContent, String videoUri) {
+	public Content(String textContent, String videoUri,Long id, String title, Integer position, Section section) {
+		super(id, title, position,section); // super que vem da minha classe mãe
 		this.textContent = textContent;
 		this.videoUri = videoUri;
 	}

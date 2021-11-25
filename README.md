@@ -329,11 +329,7 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
 - DeliveryResource
  
 
-
-
-
- 
-      
-Daniel Benedito da Silva
-
-Email: danielbenedito263@gmail.com
+## Autor
+  
+ name : Daniel Benedito da Silva
+ Email: danielbenedito263@gmail.com

@@ -10,6 +10,21 @@
 ## Sobre o projeto
 
 Aqui você verá a implementação de um modelo conceitual complexo com ORM e seed de banco de dados. Você também verá autorizações customizadas: em nível de serviço, conteúdo customizado para o usuário logado, refresh token, pré-autorização de métodos.
+
+## Competências
+- Implementação de um modelo conceitual (modelo de domínio em nível de análise)
+- Instanciação (seed) de um modelo de domínio com SQL
+- Reaproveitar “caixas de ferramentas” de projetos anteriores
+- Incluir segurança com OAuth2 e JWT
+- Incluir suporte a validação de dados com Bean Validation
+- Incluir tratamento de exceções
+- Realizar novas implementações de segurança
+- Autorização customizada em nível de serviço
+- Conteúdo customizado para o usuário logado
+- Refresh token
+- Pré-autorização de métodos
+- Padrão de projeto observer / princípio SOLID OCP
+
    
 ## Modelo Conceitual
 ![imagem_conceitual](https://user-images.githubusercontent.com/81425846/143425399-6787a4f0-2cd9-4bb3-85b3-2f4fbb7ccc5b.png)
